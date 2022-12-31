@@ -6,7 +6,7 @@ export class CreateUserDto {
 
   @Min(100000000, { message: 'taxNumber must be at least 9 digit long' })
   @Max(9999999999, { message: 'taxNumber must be at most 10 digit long' })
-  taxNumber: number;
+  taxNumber: string;
 
   @MinLength(3)
   companyName: string;
